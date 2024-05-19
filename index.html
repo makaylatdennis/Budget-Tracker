@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="styles2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    
+<div class="header">
+<h1>Budget Tracker</h1>
+</div>
+
+
+
+    
+    <div class="budget-container">
+    <form class="budget-parent">
+    <table class="budget-calculator">
+<tbody id="table-content">
+ <tr colspan="3" ><td class="column_title" colspan="6">Add New</td></tr>
+ 
+ 
+ <tr>
+    <td><p>Total Income</p></td>
+<td><input id="totalIncome" type="text" readonly></td>
+
+
+<td><p>Total Expense</p></td>
+<td><input id="totalExpense" type="text" readonly></td>
+
+<td><p>Budget</p></td>
+<td><input id="budget" type="text" readonly></td>
+
+</tr>
+ 
+
+ <tr>
+    <td><div class="drop-down">
+        <select class="dropbth">
+            <option class="dropdown-content" value="income">Income</option>
+            <option class="dropdown-content" value="expense">Expense</option>
+        </select>
+</td>
+
+            <td> 
+                <input id="description" name="description" type="text" placeholder="Description">
+                <div class="error"></div>
+            </td>
+  
+
+     <td> 
+    <input id="amount" name="amount" type="text" placeholder="Amount">
+    <div class="error"></div>
+</td>  
+
+
+   <td>
+<input id="date" name="date" type="date" placeholder="mm/dd/yyyy">
+    <div class="error"></div>
+</td>
+
+   <td> <input type="button" id="add" value="+"></td>
+   
+</tr>
+
+
+
+
+
+
+</tbody>
+    </table>
+</form>
+</div>
+
+
+<script src="script.js"></script>
+    
+</body>
+</html>
